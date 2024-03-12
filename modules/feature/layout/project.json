@@ -1,7 +1,7 @@
 {
   "name": "layout",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "modules/features/layout/src",
+  "sourceRoot": "modules/feature/layout/src",
   "prefix": "ecommerce",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "modules/features/layout/jest.config.ts"
+        "jestConfig": "modules/feature/layout/jest.config.ts"
       }
     },
     "lint": {

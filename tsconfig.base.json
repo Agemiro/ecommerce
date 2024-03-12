@@ -15,12 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ecommerce/layout": ["modules/features/layout/src/index.ts"],
+      "@ecommerce/feature/product-search": [
+        "modules/feature/product/search/src/index.ts"
+      ],
+      "@ecommerce/layout": ["modules/feature/layout/src/index.ts"],
       "@ecommerce/product-data-access": [
         "modules/data-access/product/src/index.ts"
-      ],
-      "@ecommerce/product-search": [
-        "modules/feature/product/search/src/index.ts"
       ]
     }
   },
