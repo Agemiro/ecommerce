@@ -5,8 +5,13 @@
   height: 60px;
   padding: 20px;
   background-color: #0000cd;
-}
 
-.logo {
-  color: #fff;
+  //Padrão BEM
+  &__logo {
+    text-decoration: none;
+  }
+
+  &__title {
+    color: #fff;
+  }
 }
