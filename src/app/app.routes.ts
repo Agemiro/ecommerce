@@ -10,4 +10,9 @@ export const appRoutes: Route[] = [
     path: 'home',
     loadChildren: () => import('@ecommerce/home').then((c) => c.homeRoutes),
   },
+  {
+    path: 'product',
+    loadChildren: () =>
+      import('@ecommerce/product-detail').then((c) => c.productDetailRoutes),
+  },
 ];

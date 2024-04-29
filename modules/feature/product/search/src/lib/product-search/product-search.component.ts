@@ -4,10 +4,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import {
-  ProductSearchService,
-  mockProducts,
-} from '@ecommerce/product-data-access';
+import { ProductSearchService } from '@ecommerce/product-data-access';
 import {
   Observable,
   debounceTime,
@@ -16,6 +13,7 @@ import {
   switchMap,
 } from 'rxjs';
 import { Product } from 'modules/data-access/product/src/lib/models/product.model';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'ecommerce-product-search',
@@ -26,6 +24,7 @@ import { Product } from 'modules/data-access/product/src/lib/models/product.mode
     MatInputModule,
     MatAutocompleteModule,
     ReactiveFormsModule,
+    RouterModule,
   ],
   templateUrl: './product-search.component.html',
   styleUrl: './product-search.component.scss',
