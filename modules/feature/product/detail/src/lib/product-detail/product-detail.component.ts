@@ -3,11 +3,13 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { getParams } from './get-params';
 import { Observable, switchMap } from 'rxjs';
+import { ProductCardComponent } from '@ecommerce/product-ui';
+import { QuantityDescriptionPipe } from '../pipes/quantity-description/quantity-description.pipe';
 
 @Component({
   selector: 'ecommerce-product-detail',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProductCardComponent, QuantityDescriptionPipe],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss',
 })
