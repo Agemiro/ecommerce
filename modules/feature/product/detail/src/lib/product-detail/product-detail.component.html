@@ -5,7 +5,11 @@
       <div class="product-detail__info">
         <h2>{{ product.description }}</h2>
         <p>{{ product.quantity | quantityDescription }}</p>
-        <button mat-raised-button color="primary" (click)="addToCart(product)">
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="cartService.addToCart(product)"
+        >
           Add to cart
         </button>
         <pre>
