@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ecommerce/auth-form": ["modules/feature/auth/form/src/index.ts"],
       "@ecommerce/feature/product-search": [
         "modules/feature/product/search/src/index.ts"
       ],
