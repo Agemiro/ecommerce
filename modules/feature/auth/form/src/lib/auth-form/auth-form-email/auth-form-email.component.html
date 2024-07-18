@@ -1,1 +1,30 @@
-<p>auth-form-email works!</p>
+<mat-form-field appearance="outline" class="form-field">
+  <mat-label>Enter your email address</mat-label>
+  <input
+    [formControl]="control"
+    autofocus
+    matInput
+    placeholder="Ex: user@gmail.com"
+    type="email"
+  />
+  @if (control.hasError('email') && !control.hasError('required')) {
+  <mat-error data-testid="error-email"
+    >Please enter a valid email address</mat-error
+  >
+  } @if (control.hasError('required')) {
+  <mat-error data-testid="error-required"
+    >Email is <strong>required</strong></mat-error
+  >
+  }
+</mat-form-field>
+
+<div class="container">
+  <button
+    [disabled]="control.invalid"
+    mat-button
+    color="primary"
+    [routerLink]="['../', 'password']"
+  >
+    Next
+  </button>
+</div>
